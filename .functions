@@ -3,6 +3,12 @@ function md() {
 	mkdir -p "$@" && cd "$@"
 }
 
+# gitignore.io
+# example:
+# gi xcode,objective-c > .gitignore
+function gi() {
+	curl http://www.gitignore.io/api/$@ ;
+}
 
 # find shorthand
 function f() {
